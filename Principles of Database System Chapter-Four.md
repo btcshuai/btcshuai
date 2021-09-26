@@ -115,9 +115,13 @@ mysql> desc student;
 +-------+----------+------+-----+---------+-------+
 3 rows in set (0.05 sec)
 
+插入单行数据：
 insert into student(Sno,Sname,Sage) values ('001','lisi','21');
 
 insert student set Sno='002',Sname='zhangsan',Sage='22';
+
+插入多行数据：
+insert into student(Sno,Sname,Sage) values ('001','lisi','21'),('002','wangwu','38');
 ```
 
 查询所有行：select * from student;
